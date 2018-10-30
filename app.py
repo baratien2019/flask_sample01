@@ -8,5 +8,10 @@ def index():
     return 'flask'
 
 
+@app.route('/<name>')
+def index_n(name):
+    return 'hello {}'.format(name)
+
+
 if __name__ == '__main__':
     app.run()
